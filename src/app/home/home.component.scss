@@ -1,16 +1,97 @@
-.container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import "../../assets/scss/colors.scss";
 
-  background: url(../../assets/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+body {
+  font-family: arial;
+}
 
-  .title {
-    color: white;
-    margin: 0;
-    padding: 50px 20px;
-  }
+.custom_container {
+  background-color: $base_color_5;
+}
+.menu_custom {
+  -webkit-box-shadow: 2px 0px 5px 0px rgba(130, 130, 130, 1);
+  -moz-box-shadow: 2px 0px 5px 0px rgba(130, 130, 130, 1);
+  box-shadow: 2px 0px 5px 0px rgba(130, 130, 130, 1);
+  z-index: 999;
+  background-color: $base_color_3;
+}
+.bar_menu {
+  height: 50px;
+  background-color: $base_color_1_lighten;
+}
+
+.space_under_bar {
+  height: 30px;
+  background-color: $base_color_1;
+  -webkit-box-shadow: inset 0px 5px 5px -4px rgba(74, 74, 74, 1);
+  -moz-box-shadow: inset 0px 5px 5px -4px rgba(74, 74, 74, 1);
+  box-shadow: inset 0px 5px 5px -4px rgba(74, 74, 74, 1);
+}
+
+.content_home {
+  background-color: $base_color_5;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #d8dee9;
+  color: #4c566a;
+  text-align: center;
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel {
+  background-image: url("../../assets/imgs/wheel_back.png");
+  background-position: center;
+  background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1,
+p {
+  margin: 0;
+}
+
+div.power_controls {
+  margin-right: 70px;
+}
+
+div.html5_logo {
+  margin-left: 70px;
+}
+
+/* Styles for the power selection controls */
+table.power {
+  background-color: #cccccc;
+  cursor: pointer;
+  border: 1px solid #333333;
+}
+
+table.power th {
+  background-color: white;
+  cursor: default;
+}
+
+td.pw1 {
+  background-color: #6fe8f0;
+}
+
+td.pw2 {
+  background-color: #86ef6f;
+}
+
+td.pw3 {
+  background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable {
+  cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom {
+  margin-bottom: 5px;
 }

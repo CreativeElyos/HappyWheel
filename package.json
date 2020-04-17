@@ -90,5 +90,9 @@
   },
   "engines": {
     "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "primeicons": "2.0.0",
+    "primeng": "9.0.5"
   }
 }

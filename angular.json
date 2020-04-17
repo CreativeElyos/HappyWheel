@@ -20,9 +20,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/font-awesome.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/Winwheel.js"
+            ],
             "customWebpackConfig": {
               "path": "./angular.webpack.js"
             }

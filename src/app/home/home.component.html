@@ -1,5 +1,99 @@
-<div class="container">
-  <h1 class="title">
+<!-- <h1 class="title">
     {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
+  </h1> -->
+<div class="ui-g custom_container">
+  <div class="ui-g-8 ui-md-1 menu_custom" [style.height.px]="height">Menu</div>
+  <div class="ui-g-12 ui-md-11 ui-g-nopad">
+    <div class="ui-g-12 bar_menu">
+      Bar
+    </div>
+    <div class="ui-g-12 space_under_bar">
+    </div>
+    <div class="ui-g-12 ui-g-nopad content_home">
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, orci nec
+          dictum convallis, ligula mauris vestibulum turpis, nec varius tortor quam at diam. Nullam a viverra nibh. In
+          tincidunt tempor lectus quis vulputate. Pellentesque nec dui aliquam, lobortis est in, lobortis ante</div>
+        <div class="ui-g-12 ui-md-4">Maecenas vel nisi aliquet, vulputate tortor id, laoreet massa. Maecenas mattis
+          tristique bibendum. Suspendisse vel mi dictum, vestibulum lacus quis, pulvinar quam. Proin vulputate, nibh
+          at finibus varius, leo eros lacinia elit, nec blandit odio tellus a justo. Donec nec ex auctor, tristique
+          nulla nec, rutrum sapien.</div>
+        <div class="ui-g-12 ui-md-4">Proin efficitur in leo eget ornare. Nam vestibulum neque sed velit sagittis
+          sodales. Sed scelerisque hendrerit magna a hendrerit. Cras tempor sem at justo pharetra convallis. Curabitur
+          vel sodales purus. Vestibulum interdum facilisis nulla imperdiet suscipit. Quisque lectus felis, condimentum
+          eget hendrerit sit amet.</div>
+      </div>
+
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, orci nec
+          dictum convallis, ligula mauris vestibulum turpis, nec varius tortor quam at diam. Nullam a viverra nibh. In
+          tincidunt tempor lectus quis vulputate. Pellentesque nec dui aliquam, lobortis est in, lobortis ante</div>
+        <div class="ui-g-12 ui-md-4">Maecenas vel nisi aliquet, vulputate tortor id, laoreet massa. Maecenas mattis
+          tristique bibendum. Suspendisse vel mi dictum, vestibulum lacus quis, pulvinar quam. Proin vulputate, nibh
+          at finibus varius, leo eros lacinia elit, nec blandit odio tellus a justo. Donec nec ex auctor, tristique
+          nulla nec, rutrum sapien.</div>
+        <div class="ui-g-12 ui-md-4">Proin efficitur in leo eget ornare. Nam vestibulum neque sed velit sagittis
+          sodales. Sed scelerisque hendrerit magna a hendrerit. Cras tempor sem at justo pharetra convallis. Curabitur
+          vel sodales purus. Vestibulum interdum facilisis nulla imperdiet suscipit. Quisque lectus felis, condimentum
+          eget hendrerit sit amet.</div>
+      </div>
+
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-6">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td>
+                <div class="power_controls">
+                  <br />
+                  <br />
+                  <table class="power" cellpadding="10" cellspacing="0">
+                    <tr>
+                      <th align="center">Force</th>
+                    </tr>
+                    <tr>
+                      <td width="78" align="center" id="pw3" (click)="powerSelected(3)">Haute</td>
+                    </tr>
+                    <tr>
+                      <td align="center" id="pw2" (click)="powerSelected(2)">Moyenne</td>
+                    </tr>
+                    <tr>
+                      <td align="center" id="pw1" (click)="powerSelected(1)">Basse</td>
+                    </tr>
+                  </table>
+                  <br />
+                  <img id="spin_button" src="../../assets/imgs/spin_off.png" alt="Spin" (click)="startSpin()" />
+                  <br /><br />
+                  &nbsp;&nbsp;<a href="#"
+                    (click)="resetWheel()">Rejouer</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(recommencer)
+                </div>
+              </td>
+              <td width="438" height="582" class="the_wheel" align="center" valign="center">
+                <canvas id="canvas" width="434" height="434">
+                  <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try
+                    another.</p>
+                </canvas>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- <div class="ui-g-6 ui-md-3"><img src="assets/showcase/images/demo/galleria/galleria1.jpg" style="width:100%"></div> 
+                  <div class="ui-g-6 ui-md-3"><img src="assets/showcase/images/demo/galleria/galleria1.jpg" style="width:100%"></div>    
+                  <div class="ui-g-6 ui-md-3"><img src="assets/showcase/images/demo/galleria/galleria1.jpg" style="width:100%"></div>       -->
+      </div>
+
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-6">Phasellus faucibus purus volutpat mauris lacinia sodales. Ut sit amet sapien
+          facilisis, commodo dui non, fringilla tellus. Quisque tempus facilisis nisi sodales finibus. Pellentesque
+          neque orci, ullamcorper vitae ligula quis, dignissim euismod augue.</div>
+        <div class="ui-g-12 ui-md-6">Fusce ullamcorper congue massa, eget ullamcorper nunc lobortis egestas. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices dui eget dolor feugiat dapibus. Aliquam
+          pretium leo et egestas luctus. Nunc facilisis gravida tellus.</div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- <div class="ui-g-12 ">
+    Footer
+  </div> -->
 </div>
+<script></script>
